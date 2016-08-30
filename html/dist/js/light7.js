@@ -5019,7 +5019,6 @@ Device/OS Detection
     if(!currentPage[0]) throw new Error("can't find .page element");
     var newCurrentPage = $(hash);
 
-
     if(newCurrentPage[0] && (!currentPage[0] || hash.slice(1) !== currentPage[0].id)) {
       currentPage.removeClass("page-current");
       newCurrentPage.addClass("page-current");
@@ -5047,13 +5046,10 @@ Device/OS Detection
 
   //load new page, and push to history
   Router.prototype.loadPage = function(url, noAnimation, replace, reload) {
-
     var param = url;
-
     if(noAnimation === undefined) {
       noAnimation = !this.defaults.transition;
     }
-
     if(typeof url === typeof "a") {
       param = {
         url: url,
@@ -5061,13 +5057,9 @@ Device/OS Detection
         replace: replace
       }
     }
-
     var url = param.url, noAnimation = param.noAnimation, replace = param.replace;
-
     this.getPage(url, function(page, extra) {
-
       var currentPage = this.getCurrentPage();
-
       var pageid = currentPage[0].id;
 
       var action = "pushBack";
@@ -5079,7 +5071,6 @@ Device/OS Detection
         id: this.getCurrentStateID(),
         animation: !noAnimation
       });
-
       //remove all forward page
       var forward = JSON.parse(this.state.getItem("forward") || "[]");
       var self = this;
@@ -5095,15 +5086,11 @@ Device/OS Detection
         });
       }
       this.state.setItem("forward", "[]");  //clearforward
-
       var duplicatePage = $("#"+$(page)[0].id);
-
+	
       page.insertBefore($(".page")[0]);
-
       if(duplicatePage[0] !== page[0]) duplicatePage.remove(); //if inline mod, the duplicate page is current page
-
       if(extra) self.extras[page[0].id] = extra.appendTo(document.body);
-
       var id = this.genStateID();
       this.setCurrentStateID(id);
 

@@ -181,7 +181,7 @@ function Infscroll(url, $tDom, $cDom, append, totalPage) {
 				"page": _this.page
 			},
 			success: function(data) {
-				console.log(data)
+				//console.log(data)
 				if (data.status == "200") {
 					if (data.list) {
 						var context = data;
