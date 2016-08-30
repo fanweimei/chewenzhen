@@ -1,0 +1,57 @@
+{
+ "status":200,
+ "list":
+  [
+    
+    {
+    		"url":"ae-detail.html",
+        "simg":"assets/temp/ae-list-01.png",
+        "title":"盘点中国十大名胜古迹！",
+        "subtitle":"一起来看看北京圆明园的诡异事件"
+      },
+    {
+    	  	"url":"ae-detail.html",
+        "simg":"assets/temp/ae-list-01.png",
+        "title":"盘点顶级豪车排档位，劳斯莱斯和宾利居然最丑!",
+        "subtitle":"一起来看看顶级豪车的排档位都是怎么样的"
+      },
+      {
+    	  	  "url":"ae-detail.html",
+          "simg":"assets/temp/ae-list-01.png",
+          "title":"盘点中国十大名胜古迹！",
+          "subtitle":"一起来看看北京圆明园的诡异事件"
+        },
+      {
+        		"url":"ae-detail.html",
+            "simg":"assets/temp/ae-list-01.png",
+            "title":"盘点中国十大名胜古迹！",
+            "subtitle":"一起来看看北京圆明园的诡异事件"
+        },
+        {
+    		"url":"ae-detail.html",
+        "simg":"assets/temp/ae-list-01.png",
+        "title":"盘点中国十大名胜古迹！",
+        "subtitle":"一起来看看北京圆明园的诡异事件"
+      },
+    {
+    	  	"url":"ae-detail.html",
+        "simg":"assets/temp/ae-list-01.png",
+        "title":"盘点顶级豪车排档位，劳斯莱斯和宾利居然最丑!",
+        "subtitle":"一起来看看顶级豪车的排档位都是怎么样的"
+      },
+      {
+    	  	  "url":"ae-detail.html",
+          "simg":"assets/temp/ae-list-01.png",
+          "title":"盘点中国十大名胜古迹！",
+          "subtitle":"一起来看看北京圆明园的诡异事件"
+        },
+      {
+        		"url":"ae-detail.html",
+            "simg":"assets/temp/ae-list-01.png",
+            "title":"盘点中国十大名胜古迹！",
+            "subtitle":"一起来看看北京圆明园的诡异事件"
+        }
+        
+  ],
+ "msg":"请求成功"
+}

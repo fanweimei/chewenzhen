@@ -1,0 +1,63 @@
+{
+  "status": 200,
+  "list": [
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "des": "东圃/车陂",
+      "rz":"1",
+      "dis": "7km"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "des": "东圃/车陂",
+      "dis": "7km"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "des": "东圃/车陂",
+      "dis": "7km"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "des": "东圃/车陂",
+      "dis": "7km"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "des": "东圃/车陂",
+      "dis": "7km"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "des": "东圃/车陂",
+      "dis": "7km"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "des": "东圃/车陂",
+      "dis": "7km"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "des": "东圃/车陂",
+      "dis": "7km"
+    }
+  ],
+  "msg": "请求成功"
+}

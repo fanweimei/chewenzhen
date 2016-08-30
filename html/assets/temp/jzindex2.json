@@ -1,0 +1,70 @@
+{
+  "status": "200",
+  "list": [
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "北京烤鸭店",
+      "majors": "奥迪 大众 本田",
+      "pos": "广州 东圃/车陂",
+      "dis": "7km",
+      "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "pos": "广州 东圃/车陂",
+      "dis": "7km",
+      "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "pos": "广州 东圃/车陂",
+      "dis": "7km",
+      "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。"
+    },
+    {
+      "portrait": "assets/temp/bussiness-list.png",
+      "name": "广东中澳奥迪汽车4S店",
+      "majors": "奥迪 大众 本田",
+      "pos": "广州 东圃/车陂",
+      "dis": "7km",
+      "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。"
+    },
+    {
+        "portrait": "assets/temp/bussiness-list.png",
+        "name": "北京烤鸭店",
+        "majors": "奥迪 大众 本田",
+        "pos": "广州 东圃/车陂",
+        "dis": "7km",
+        "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。"
+      },
+      {
+        "portrait": "assets/temp/bussiness-list.png",
+        "name": "广东中澳奥迪汽车4S店",
+        "majors": "奥迪 大众 本田",
+        "pos": "广州 东圃/车陂",
+        "dis": "7km",
+        "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。"
+      },
+      {
+        "portrait": "assets/temp/bussiness-list.png",
+        "name": "广东中澳奥迪汽车4S店",
+        "majors": "奥迪 大众 本田",
+        "pos": "广州 东圃/车陂",
+        "dis": "7km",
+        "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。"
+      },
+      {
+        "portrait": "assets/temp/bussiness-list.png",
+        "name": "广东中澳奥迪汽车4S店",
+        "majors": "奥迪 大众 本田",
+        "pos": "广州 东圃/车陂",
+        "dis": "7km",
+        "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。"
+      }
+  ],
+  "msg": "请求成功"
+}

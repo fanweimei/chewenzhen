@@ -1,0 +1,68 @@
+{
+	"status": "200",
+	"list": 
+		[
+		 	{
+		 		"url": "fx-adviser_detail.html",
+		 		"rank_class": "one",
+		 		"rank_id": 1,
+			 	"portrait": "assets/temp/tfx-tx.png",
+			 	"name": "陈永胜",
+			 	"type": "服务顾问",
+			 	"exp": "路虎维修经验5年",
+			 	"praise": "1456",
+			 	"que_num": "1849个",
+			 	"adopt": "80%"
+		 	},
+		 	{
+		 		"url": "fx-adviser_detail.html",
+		 		"rank_class": "two",
+		 		"rank_id": 2,
+			 	"portrait": "assets/temp/tfx-tx.png",
+			 	"name": "成龙",
+			 	"type": "服务顾问",
+			 	"exp": "路虎维修经验5年",
+			 	"praise": "1456",
+			 	"que_num": "1849个",
+			 	"adopt": "80%"
+		 	},
+		 	{
+		 		"url": "fx-adviser_detail.html",
+		 		"rank_class": "three",
+		 		"rank_id": 3,
+			 	"portrait": "assets/temp/tfx-tx.png",
+			 	"name": "陈小春",
+			 	"type": "服务顾问",
+			 	"exp": "路虎维修经验5年",
+			 	"praise": "1456",
+			 	"que_num": "1849个",
+			 	"adopt": "80%"
+		 	},
+		 	{
+		 		"url": "fx-adviser_detail.html",
+		 		"rank_class": "others",
+		 		"rank_id": 4,
+			 	"portrait": "assets/temp/tfx-tx.png",
+			 	"name": "陈永胜",
+			 	"type": "服务顾问",
+			 	"exp": "路虎维修经验5年",
+			 	"praise": "1456",
+			 	"que_num": "1849个",
+			 	"adopt": "80%"
+		 	},
+		 	{
+		 		"url": "fx-adviser_detail.html",
+		 		"rank_class": "others",
+		 		"rank_id": 5,
+			 	"portrait": "assets/temp/tfx-tx.png",
+			 	"name": "陈永胜",
+			 	"type": "服务顾问",
+			 	"exp": "路虎维修经验5年",
+			 	"praise": "1456",
+			 	"que_num": "1849个",
+			 	"adopt": "80%"
+		 	}
+		 	
+		 ],
+	"msg": "请求成功"
+}

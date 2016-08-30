@@ -1,0 +1,55 @@
+{
+ "status":200,
+ "list":
+  [
+    {
+      "shop_name":"广东中澳奥迪4S专修店（东圃）",
+      "type_class":"s-by",
+      "type":"保养比价",
+      "simg":"assets/img/apo-01.png",
+      "time":"2016-06-21 14:21",
+      "price":"678.00"
+    },
+    {
+        "shop_name":"广东中澳奥迪4S专修店（东圃）",
+        "type_class":"s-wx",
+        "type":"维修比价",
+        "simg":"assets/img/apo-01.png",
+        "time":"2016-06-21 14:21",
+        "price":"6078.00"
+      },
+      {
+          "shop_name":"华南理工大学世博超市",
+          "type_class":"s-by",
+          "type":"保养比价",
+          "simg":"assets/img/apo-01.png",
+          "time":"2016-06-21 14:21",
+          "price":"678.00"
+        },
+        {
+            "shop_name":"广东中澳奥迪4S专修店（东圃）",
+            "type_class":"s-by",
+            "type":"保养比价",
+            "simg":"assets/img/apo-01.png",
+            "time":"2016-06-21 14:21",
+            "price":"678.00"
+          },
+          {
+              "shop_name":"广东中澳奥迪4S专修店（东圃）",
+              "type_class":"s-wx",
+              "type":"维修比价",
+              "simg":"assets/img/apo-01.png",
+              "time":"2016-06-21 14:21",
+              "price":"6078.00"
+            },
+            {
+                "shop_name":"华南理工大学世博超市",
+                "type_class":"s-by",
+                "type":"保养比价",
+                "simg":"assets/img/apo-01.png",
+                "time":"2016-06-21 14:21",
+                "price":"678.00"
+              }
+  ],
+ "msg":"请求成功"
+}

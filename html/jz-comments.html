@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>全部评论</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-jzComments" class="page">
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back" href="jz-detail.html"></a>
+				<h1 class="title">全部评论</h1>
+			</header>
+			<div class="content infinite-scroll" data-distance="200">
+				<div class="g-com_write">
+					全部评论<span>（58）</span>
+					<i class="icon icon-tianxie pull-right"></i>
+				</div>
+				<div class="tab list-block media-list m-list_qa f-nom">
+					<ul class="list-container m-by_list no-border" id="j-scroll_list">
+						<script id="t-scroll_list" type="text/template7">
+							{{#each list}}
+							<li>
+								<div class="item-content">
+									<div class="item-media"><img src={{portrait}} style='width: 2.2rem;'></div>
+									<div class="item-inner f-posr">
+										<div class="item-score">
+											<span class="icon icon-wujiaoxing {{#js_compare " this.score >=1 "}} mark {{/js_compare}}"></span>
+											<span class="icon icon-wujiaoxing {{#js_compare " this.score >=2 "}} mark {{/js_compare}}"></span>
+											<span class="icon icon-wujiaoxing {{#js_compare " this.score >=3 "}} mark {{/js_compare}}"></span>
+											<span class="icon icon-wujiaoxing {{#js_compare " this.score >=4 "}} mark {{/js_compare}}"></span>
+											<span class="icon icon-wujiaoxing {{#js_compare " this.score >=5 "}} mark {{/js_compare}}"></span>
+										</div>
+										<div class="item-title-row">
+											<div class="item-title">
+												<span class="name">{{name}}</span>
+												<span class="sex {{#js_compare " this.sex=='0' "}} man {{else}} woman {{/js_compare}}"></span>
+												<span class="car">{{car}}</span>
+											</div>
+										</div>
+										<div class="item-address">{{address}}</div>
+										<div class="item-subcon">
+											<div class="text">
+												{{text}}
+											</div>
+											{{#if img_box}}
+											<ul class="img_box pb-standalone">
+												{{#each img_box}}
+												<li><img data-bigImg={{big_img}} src={{img}} /></li>
+												{{/each}}
+											</ul>
+											{{/if}}
+											<div class="bottom">
+												<span>{{time}}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								{{#if resp}}
+								<div class="item-resp">
+									<span>商家回复：</span>{{resp}}
+								</div>
+								{{/if}}
+							</li>
+							{{/each}}
+						</script>
+					</ul>
+					<!-- preloader -->
+					<div class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+</html>

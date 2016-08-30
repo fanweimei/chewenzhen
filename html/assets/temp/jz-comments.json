@@ -1,0 +1,54 @@
+{
+    "status": "200",
+    "list": [
+        {
+            "portrait": "http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg",
+            "name": "王小姐",
+            "sex": "2",
+            "car": "奥迪A6",
+            "address": "广东省 广州市",
+            "score": "1",
+            "text": "店面在马路旁边，非常方便，干净清洁，而且服务态度也很好，跟车问诊上的报价无误差！",
+            "img_box": [
+                {
+                    "big_img": "//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg",
+                    "img": "assets/temp/267868.png"
+                },
+                {
+                    "big_img": "//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg",
+                    "img": "assets/temp/267868.png"
+                }
+            ],
+            "resp": "谢谢您的鼓励和支持，我们会再接再厉！中澳4S有您更精彩，我们期待您的再次光临，祝您生活愉快",
+            "time": "2014-04-24"
+        },
+        {
+            "portrait": "http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg",
+            "name": "王小姐",
+            "sex": "0",
+            "car": "宝马",
+            "address": "广东省 广州市",
+            "score": "3",
+            "text": "店面在马路旁边，非常方便，干净清洁，而且服务态度也很好，跟车问诊上的报价无误差！",
+            "img_box": [
+                {
+                    "big_img": "//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg",
+                    "img": "assets/temp/267868.png"
+                }
+            ],
+            "resp": "谢谢您的鼓励和支持，我们会再接再厉！中澳4S有您更精彩，我们期待您的再次光临，祝您生活愉快",
+            "time": "2015-04-24"
+        },
+        {
+            "portrait": "http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg",
+            "name": "王小姐",
+            "sex": "2",
+            "car": "奥迪A6",
+            "address": "广东省 广州市",
+            "score": "2",
+            "text": "店面在马路旁边，非常方便，干净清洁，而且服务态度也很好，跟车问诊上的报价无误差！",
+            "time": "2014-04-24"
+        }
+    ],
+    "msg": "请求成功"
+}

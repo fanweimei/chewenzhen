@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>产品介绍</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" href="dist/css/light7-swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-proList" class="page">
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back" href="jz-detail.html"></a>
+				<h1 class="title">产品介绍</h1>
+			</header>
+			<div class="content">
+				<div class="buttons-tab tab-bt prod-bt">
+					<a href="#tab1" class="tab-link active button">奥迪</a>
+					<a href="#tab2" class="tab-link button">奔驰</a>
+					<a href="#tab3" class="tab-link button">宝马</a>
+					<a href="#tab4" class="tab-link button">路虎</a>
+					<a href="#tab5" class="tab-link button">沃尔沃</a>
+				</div>
+				<div class="tabs pull-to-refresh-container tab-con prod-con">
+					<!--加装/改装-->
+					<div id="tab1" class="tab pull-to-refresh-content infinite-scroll active">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+				          <div class="preloader"></div>
+				          <div class="pull-to-refresh-arrow"></div>
+				        </div>
+				        <ul id="j-jz_list">
+							<li>
+								<div class="dt"><img src="assets/temp/aodi.png"/></div>
+								<div class="dd"><h3>奥迪改装一键启动</h3><span>￥890</span></div>
+							</li>
+						</ul>
+						<script id="t-jz-list" type="text/template7">
+							{{#each list}}
+							<li href={{url}}>
+								<div class="dt"><img src={{portrait}}/></div>
+								<div class="dd"><h3>{{title}}</h3><span>{{price}}</span></div>
+							</li>
+							{{/each}}
+						</script>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+					<!--易碎件-->
+					<div id="tab2" class="tab pull-to-refresh-content infinite-scroll">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+				          <div class="preloader"></div>
+				          <div class="pull-to-refresh-arrow"></div>
+				        </div>
+						<ul id="j-ysj_list">
+						</ul>
+						<script id="t-ysj-list" type="text/template7">
+							{{#each list}}
+							<li href={{url}}>
+								<div class="dt"><img src={{portrait}}/></div>
+								<div class="dd"><h3>{{title}}</h3><span>{{price}}</span></div>
+							</li>
+							{{/each}}
+						</script>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+					<!--保养-->
+					<div id="tab3" class="tab pull-to-refresh-content infinite-scroll">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+				          <div class="preloader"></div>
+				          <div class="pull-to-refresh-arrow"></div>
+				        </div>
+						<ul id="j-by_list">
+						</ul>
+						<script id="t-by-list" type="text/template7">
+							{{#each list}}
+							<li href={{url}}>
+								<div class="dt"><img src={{portrait}}/></div>
+								<div class="dd"><h3>{{title}}</h3><span>{{price}}</span></div>
+							</li>
+							{{/each}}
+						</script>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+					<!--维修-->
+					<div id="tab4" class="tab pull-to-refresh-content infinite-scroll">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+				          <div class="preloader"></div>
+				          <div class="pull-to-refresh-arrow"></div>
+				        </div>
+						<ul id="j-wx_list">
+						</ul>
+						<script id="t-wx-list" type="text/template7">
+							{{#each list}}
+							<li href={{url}}>
+								<div class="dt"><img src={{portrait}}/></div>
+								<div class="dd"><h3>{{title}}</h3><span>{{price}}</span></div>
+							</li>
+							{{/each}}
+						</script>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+					<!--其它-->
+					<div id="tab5" class="tab pull-to-refresh-content infinite-scroll">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+				          <div class="preloader"></div>
+				          <div class="pull-to-refresh-arrow"></div>
+				        </div>
+						<ul id="j-other_list">
+						</ul>
+						<script id="t-other-list" type="text/template7">
+							{{#each list}}
+							<li href={{url}}>
+								<div class="dt"><img src={{portrait}}/></div>
+								<div class="dd"><h3>{{title}}</h3><span>{{price}}</span></div>
+							</li>
+							{{/each}}
+						</script>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+</html>

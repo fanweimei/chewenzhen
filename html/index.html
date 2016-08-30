@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" href="dist/css/light7-swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-index" class="page">
+			<!-- 头部 -->
+			<header class="bar bar-nav">
+				<a class="icon  pull-left" href="choose-city.html">
+					<span class="m-city">广州</span>
+				</a>
+				<a class="icon  pull-right" href="choose-car.html">
+					<span class="m-add_car">添加爱车</span>
+				</a>
+				<h1 class="title">
+					<div class="searchbar my-search_index">
+					<div class="search-input">
+						<label class="icon icon-search" for="search"></label>
+						<input type="search" id="listSearch" placeholder="搜索汽车问题">
+					</div>
+				</div>
+					
+				</h1>
+
+			</header>
+			<!-- 工具栏 -->
+			<nav class="bar bar-tab">
+				<a class="tab-item active" href="index.html">
+					<span class="icon icon-my icon-my_index"></span>
+					<span class="tab-label">首页</span>
+				</a>
+				<a class="tab-item" href="hd-index.html">
+					<span class="icon icon-my icon-my_wenzhen"></span>
+					<span class="tab-label">问诊</span>
+
+				</a>
+				<a class="tab-item " href="bj-index.html">
+					<span class="icon icon-my icon-my_bijia"></span>
+					<span class="tab-label">比价</span>
+				</a>
+				<a class="tab-item " href="fx-index.html">
+					<span class="icon icon-my icon-my_faxian"></span>
+					<span class="tab-label">发现</span>
+				</a>
+				<a class="tab-item" href="pc-my.html">
+					<span class="icon icon-my icon-my_user"></span>
+					<span class="tab-label">我的</span>
+					<span class="badge">2</span>
+				</a>
+			</nav>
+			<!-- 内容区域  -->
+			<div class="content infinite-scroll" data-distance="200">
+				<!-- 头部图标导航 -->
+				<!--<ul class="m-index_nav">
+					<li>
+						<a href="hd-index.html"><img src="assets/img/chewenzhen.png" alt="" />
+							<p>爱车问诊</p>
+						</a>
+					</li>
+					<li>
+						<a href="hd-index.html"><img src="assets/img/qichekuaibao.png" alt="" />
+							<p>清单核实</p>
+						</a>
+					</li>
+					<li>
+						<a href="byzqb_index.html"><img src="assets/img/baoyang.png" alt="" />
+							<p>保养周期表</p>
+						</a>
+					</li>
+					<li>
+						<a href="ae-index.html"><img src="assets/img/qichekuaibao.png" alt="" />
+							<p>汽车快报</p>
+						</a>
+					</li>
+					<li>
+						<a href=""><img src="assets/img/yisunjian.png" alt="" />
+							<p>易损件比价</p>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="assets/img/baoyangbijia.png" alt="" />
+							<p>保养比价</p>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="assets/img/weixiu.png" alt="" />
+							<p>维修比价</p>
+						</a>
+					</li>
+					<li>
+						<a href="jz-index.html"><img src="assets/img/gaizhuang.png" alt="" />
+							<p>改装加装</p>
+						</a>
+					</li>
+				</ul>-->
+				<ul class="m-index_ad">
+					<li><a href="lc-index.html"><img width="50%" src="assets/img/wenzhen_home.png"/></a></li>
+					<li><a href="lc-index.html"><img width="50%" src="assets/img/qingdan_home.png"/></a></li>
+					<li><a href="byzqb_index"><img width="50%" src="assets/img/zhouqibiao_home.png"/></a></li>
+				</ul>
+				<!-- 头部图标导航 -->
+				<ul class="m-index_nav g-mrb5 f-nom">
+					<li>
+						<a href="by-index.html"><img src="assets/img/baoyangc.png" alt="" />
+							<p>保养比价</p>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="assets/img/yisunjian.png" alt="" />
+							<p>易损件比价</p>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="assets/img/weixiuc.png" alt="" />
+							<p>维修比价</p>
+						</a>
+					</li>
+					<li>
+						<a href="jz-index.html"><img src="assets/img/gaizhuangc.png" alt="" />
+							<p>改装加装</p>
+						</a>
+					</li>
+				</ul>
+				<!-- 新闻 -->
+				<div class="g-bar m-auto_news">
+					<div class="tit">
+						<img src="assets/img/dongtai.png"/>
+					</div>
+					<div class="con">
+						<ul id="">
+							<li><span class="name">车主王小明</span>提出了一个问诊问题</li>
+							<li><span class="name">车主王小明</span>提出了一个问诊问题</li>
+							<li><span class="name">车主王小明</span>提出了一个问诊问题</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- 焦点图  -->
+				<div class="swiper-container g-mrb5" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="3000">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img width="100%" src="assets/temp/banner.png" alt=""></div>
+						<div class="swiper-slide"><img width="100%" src="assets/temp/banner.png" alt=""></div>
+						<div class="swiper-slide"><img width="100%" src="assets/temp/banner.png" alt=""></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!--最新提问-->
+				<div class="g-bar m-new_qa">
+					<div class="tit">
+						最新提问
+					</div>
+					<div class="con">
+						<a class="link" href="fx-hotIssue.html">查看更多</a>
+					</div>
+				</div>
+				<!-- 最新提问列表 -->
+				<div class="m-list_box">
+					<div class="list-block media-list m-list_qa f-nom">
+						<ul class="list-container" id="j-scroll_list">
+							<!--<li>
+								<div class="item-content">
+									<div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" style='width: 2.2rem;'></div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">
+												<span class="name">王先生</span>
+												<span class="sex man"></span>
+												<span class="car">路虎极光</span>
+											</div>
+										</div>
+										<div class="item-address">广州</div>
+										<div class="item-subcon">
+											<div class="text">
+												新买的极光，开着我的汽车电瓶一回就没电了，和引擎有问题有关系吗？请问我该怎么办？
+											</div>
+											<ul class="img_box pb-standalone">
+												<li><img data-bigImg="//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg" src="assets/temp/267868.png" /> </li>
+												<li><img data-bigImg="//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg" src="assets/temp/267868.png" /> </li>
+											</ul>
+											<div class="msg_box">
+												<ul>
+													<li>
+														<span class="answer">回答：</span>基本无关，可以打开电瓶的加水盖，看看水位是否在正常的位置。一般在电瓶侧边会有上、下限的标线供您参考。
+													</li>
+													<li>
+														<span class="ask">追答：</span>会不会还有其他问题呢？
+													</li>
+												</ul>
+
+											</div>
+											<div class="bottom">
+												<span>20分钟前</span>
+												<span class="qibaobox"><i class="qibao"></i>5 </span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>-->
+						</ul>
+						<!-- 列表模板引擎的模板  -->
+						<script id="t-scroll_list" type="text/template7">
+							{{#each list}}
+							<li>
+								<div class="item-content">
+									<div class="item-media"><img src="{{portrait}}" style='width: 2.2rem;'></div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">
+												<span class="name">{{name}}</span>
+												<span class="sex {{#js_compare " this.sex==='0' "}}man{{else}}woman{{/js_compare}}"></span>
+												<span class="car">{{car}}</span>
+											</div>
+										</div>
+										<div class="item-address">{{address}}</div>
+										<div class="item-subcon">
+											<div class="text">
+												{{text}}
+											</div>
+											{{#if img_box}}
+											<!-- 图片点击可以放大预览，在img容器上添加pb-standalone类 js在main.js中  -->
+											<ul class="img_box pb-standalone">
+												{{#each this.img_box}}
+												<li><img data-bigImg="{{big_img}}" src="{{img}}" /> </li>
+												{{/each}}
+
+											</ul>
+											{{/if}} 
+											<div class="bottom">
+												<span>{{time}}</span>
+												<span class="qibaobox"><i class="qibao"></i>{{num}} </span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							{{/each}}
+						</script>
+						<!-- preloader -->
+						<div class="infinite-scroll-preloader">
+							<div class="preloader"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/lrz.all.bundle.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

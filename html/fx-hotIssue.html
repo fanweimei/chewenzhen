@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>热门问题</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" href="dist/css/light7-swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-hotIssue" class="page">
+			<!-- 头部 -->
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back"></a>
+				<h1 class="title">热门问题</h1>
+			</header>
+			
+			<!-- 内容区域  -->
+			<div class="content infinite-scroll" data-distance="200">
+				<!-- 焦点图  -->
+				<div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="3000">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img width="100%" src="assets/temp/hI-banner01.png" alt=""></div>
+						<div class="swiper-slide"><img width="100%" src="assets/temp/hI-banner01.png" alt=""></div>
+						<div class="swiper-slide"><img width="100%" src="assets/temp/hI-banner01.png" alt=""></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!--选择车型-->
+				<div class="g-bar m-new_qa m-carType">
+					<div class="tit">
+						选择车型
+					</div>
+					<div class="con">
+						<a class="link" href="#">路虎极光</a>
+					</div>
+				</div>
+				<!-- 热门提问列表 -->
+				<div class="m-list_box">
+					<div class="list-block media-list m-list_qa f-nom">
+						<ul class="list-container" id="j-scroll_list">
+							<!--<li>
+								<div class="item-content">
+									<div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" style='width: 2.2rem;'></div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">
+												<span class="name">王先生</span>
+												<span class="sex man"></span>
+												<span class="car">路虎极光</span>
+											</div>
+										</div>
+										<div class="item-address">广州</div>
+										<div class="item-subcon">
+											<div class="text">
+												新买的极光，开着我的汽车电瓶一回就没电了，和引擎有问题有关系吗？请问我该怎么办？
+											</div>
+											<ul class="img_box pb-standalone">
+												<li><img data-bigImg="//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg" src="assets/temp/267868.png" /> </li>
+												<li><img data-bigImg="//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg" src="assets/temp/267868.png" /> </li>
+											</ul>
+											<div class="msg_box">
+												<ul>
+													<li>
+														<span class="answer">回答：</span>基本无关，可以打开电瓶的加水盖，看看水位是否在正常的位置。一般在电瓶侧边会有上、下限的标线供您参考。
+													</li>
+													<li>
+														<span class="ask">追答：</span>会不会还有其他问题呢？
+													</li>
+												</ul>
+
+											</div>
+											<div class="bottom">
+												<span>20分钟前</span>
+												<span class="qibaobox"><i class="qibao"></i>5 </span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>-->
+						</ul>
+						<!-- 列表模板引擎的模板  -->
+						<script id="t-scroll_list" type="text/template7">
+							{{#each list}}
+							<li>
+								<div class="item-content">
+									<div class="item-media"><img src="{{portrait}}" style='width: 2.2rem;'></div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">
+												<span class="name">{{name}}</span>
+												<span class="sex {{#js_compare " this.sex==='0' "}}man{{else}}woman{{/js_compare}}"></span>
+												<span class="car">{{car}}</span>
+											</div>
+										</div>
+										<div class="item-address">{{address}}</div>
+										<div class="item-subcon">
+											<div class="text">
+												{{text}}
+											</div>
+											{{#if img_box}}
+											<!-- 图片点击可以放大预览，在img容器上添加pb-standalone类 js在main.js中  -->
+											<ul class="img_box pb-standalone">
+												{{#each this.img_box}}
+												<li><img data-bigImg="{{big_img}}" src="{{img}}" /> </li>
+												{{/each}}
+
+											</ul>
+											{{/if}} {{#if msg_box}}
+											<div class="msg_box">
+												<ul>
+													{{#each this.msg_box}}
+													<li>
+														<span class="{{#js_compare " this.type==='0' "}}answer{{else}}ask{{/js_compare}}">
+														{{#js_compare "this.type === '0'"}}追问:{{else}}追答：{{/js_compare}}
+															
+														</span>{{text}}
+													</li>
+													{{/each}}
+
+												</ul>
+
+											</div>
+											{{/if}}
+											<div class="bottom">
+												<span>{{time}}</span>
+												<span class="qibaobox"><i class="qibao"></i>{{num}} </span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							{{/each}}
+						</script>
+						<!-- preloader -->
+						<div class="infinite-scroll-preloader">
+							<div class="preloader"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

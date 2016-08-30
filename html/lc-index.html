@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>提交成功</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" href="dist/css/light7-swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div class="page">
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back"></a>
+				<h1 class="title">清单核实</h1>
+			</header>
+			<!-- 工具栏 -->
+			<nav class="bar bar-tab">
+				<a class="tab-item" href="index.html">
+					<span class="icon icon-my icon-my_index"></span>
+					<span class="tab-label">首页</span>
+				</a>
+				<a class="tab-item" href="hd-index.html">
+					<span class="icon icon-my icon-my_wenzhen"></span>
+					<span class="tab-label">问诊</span>
+
+				</a>
+				<a class="tab-item active" href="bj-index.html">
+					<span class="icon icon-my icon-my_bijia"></span>
+					<span class="tab-label">比价</span>
+				</a>
+				<a class="tab-item " href="fx-index.html">
+					<span class="icon icon-my icon-my_faxian"></span>
+					<span class="tab-label">发现</span>
+				</a>
+				<a class="tab-item" href="pc-my.html">
+					<span class="icon icon-my icon-my_user"></span>
+					<span class="tab-label">我的</span>
+					<span class="badge">2</span>
+				</a>
+			</nav>
+			<div class="content">
+				<div class="m-lc_con">
+					<textarea placeholder="选择车型、故障部位，购车时间、行驶公里数等，上传故障部位照片技师更容易精准判别汽车问题哦"></textarea>
+					<ul id="j-lc_ListImg">
+						<li><img src="assets/temp/lcList-01.png"/></li>
+						<li><img src="assets/temp/lcList-01.png"/></li>
+					</ul>
+					
+					<div class="m-lc_bts">
+						<a href="#">选择车型</a>
+						<a id="lc-disBt" href="#">行驶公里</a>
+						<a class="upload-image" href="#">清单照片</a>
+						<input class="f-dn upload-image-input" accept="image/*" type="file">
+					</div>
+				</div>
+				<div class="g-bar m-new_qa m-lc_qa">
+					<div class="tit">
+						悬赏答疑
+					</div>
+					<div class="con">
+						<a class="link open-popup" data-popup=".g-lc_money" href="#">选择悬赏，技师答题更卖力哦</a>
+					</div>
+				</div>
+				<p><a href="lc-ok.html" class="u-btn">保存</a></p>
+			</div>
+		</div>
+		<div class="g-lc_money popup">
+			<div class="m-lc_money">
+				<div class="m-money">
+					<div class="money-tt">
+						<span class="pull-left">选择悬赏金额</span><span class="icon icon-close pull-right close-popup lc-close"></span>
+					</div>
+					<p class="money-num"><a class="active">1.0</a><a>2.0</a><a>5.0</a><a>10.0</a><a class="m-other"><input type="text" placeholder="其它" /></a></p>
+					<p class="money-tip">*金额将直接转入对应技师的账号</p>
+				</div>
+				<div class="g-lc_red">
+					<div class="m-lc_red pull-left">
+						<strong>是否使用红包</strong>
+						<p>您有<span>2</span>个红包可以使用</p>
+					</div>
+					<div class="item-content pull-right">
+			          <!-- 挑选红包按钮  -->
+			          <a href="lc-hb.html" class="m-thb external">挑红包 </a>
+			        </div>
+				</div>
+				<p class="g-red_bt"><a href="#" class="u-btn">去支付</a></p>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/i18n/cn.min.js'></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/lrz.all.bundle.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,77 @@
+{
+    "status": "200",
+    "list": [
+        {
+            "portrait": "http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg",
+            "name": "王小姐",
+            "sex": "2",
+            "car": "路虎极光",
+            "address": "深圳",
+            "reward": "5.0",
+            "text": "新买的极光，开着我的汽车电瓶一回就没电了，和引擎有问题有关系吗？请问我该怎么办？",
+            "detail_url": "hd-wzdetail.html",
+            "img_box": [
+                {
+                    "big_img": "//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg",
+                    "img": "assets/temp/267868.png"
+                },
+                {
+                    "big_img": "//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg",
+                    "img": "assets/temp/267868.png"
+                },
+                {
+                    "big_img": "//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg",
+                    "img": "assets/temp/267868.png"
+                }
+            ],
+            "time": "20分钟前",
+            "num": "5"
+        },
+        {
+            "portrait": "http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg",
+            "name": "王先生",
+            "sex": "0",
+            "car": "路虎极光",
+            "address": "广州",
+            "reward": "5.0",
+            "text": "新买的极光，开着我的汽车电瓶一回就没电了，和引擎有问题有关系吗？请问我该怎么办？",
+            "detail_url": "hd-wzdetail.html",
+            "img_box": [
+                {
+                    "big_img": "//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg",
+                    "img": "assets/temp/267868.png"
+                },
+                {
+                    "big_img": "//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg",
+                    "img": "assets/temp/267868.png"
+                }
+            ],
+            "msg_box": "",
+            "time": "20分钟前",
+            "num": "5"
+        },
+        {
+            "portrait": "http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg",
+            "name": "王小姐",
+            "sex": "2",
+            "car": "路虎极光",
+            "address": "深圳",
+            "reward": "5.0",
+            "text": "新买的极光，开着我的汽车电瓶一回就没电了，和引擎有问题有关系吗？请问我该怎么办？",
+            "detail_url": "hd-wzdetail.html",
+            "msg_box": [
+                {
+                    "type": "0",
+                    "text": "基本无关，可以打开电瓶的加水盖，看看水位是否在正常的位置。一般在电瓶侧边会有上、下限的标线供您参考。"
+                },
+                {
+                    "type": "1",
+                    "text": "那还有其他什么问题吗"
+                }
+            ],
+            "time": "20分钟前",
+            "num": "5"
+        }
+    ],
+    "msg": "请求成功"
+}

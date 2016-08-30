@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>评价</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-comment" class="page">
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back"></a>
+				<h1 class="title">评价</h1>
+			</header>
+			<div class="content content-block">
+				<div class="m-shop_portrait">
+					<img src="assets/temp/bussiness-list.png"/>
+				</div>
+				<h2 class="m-shop_name">广东中澳奥迪汽车4S店</h2>
+				<div class="m-shop_score" id="j-score">
+					<span class="icon icon-wujiaoxing"></span>
+					<span class="icon icon-wujiaoxing"></span>
+					<span class="icon icon-wujiaoxing"></span>
+					<span class="icon icon-wujiaoxing"></span>
+					<span class="icon icon-wujiaoxing"></span>
+					<input type="hidden" id="j-score_txt" value="0" />
+				</div>
+				<textarea class="m-shop_com" placeholder="车主你好，维修店的服务态度、价格、技能水平、维修完成情况你满意吗？"></textarea>
+				<p><a href="#" id="j-send" class="u-btn">发布</a><span class="open-popup" id="j-open_pop" data-popup=".pop-success"></span></p>
+			</div>
+		</div>
+		<div class="pop popup pop-success">
+			<div class="m-pop">
+				<div class="m-comok_logo">
+					<img src="assets/img/commentok-logo.png"/>
+				</div>
+				<p>评价成功</p>
+				<a class="u-confirm close-popup">确定</a>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/i18n/cn.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+</html>

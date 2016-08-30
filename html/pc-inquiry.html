@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>问诊/核单</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" href="dist/css/light7-swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-inquriy" class="page">
+			<!-- 用隐藏域控制初始化哪个tab -->
+			<input type="hidden" name="curIndex" id="curIndex" value="2" />
+			<!-- 头部 -->
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back" href="pc-my.html"></a>
+				<h1 class="title">问诊/核单</h1>
+			</header>
+			<!-- 工具栏 -->
+			<nav class="bar bar-tab">
+				<a class="tab-item active" href="index.html">
+					<span class="icon icon-my icon-my_index"></span>
+					<span class="tab-label">首页</span>
+				</a>
+				<a class="tab-item" href="#">
+					<span class="icon icon-my icon-my_wenzhen"></span>
+					<span class="tab-label">问诊</span>
+
+				</a>
+				<a class="tab-item " href="#">
+					<span class="icon icon-my icon-my_bijia"></span>
+					<span class="tab-label">比价</span>
+				</a>
+				<a class="tab-item " href="#">
+					<span class="icon icon-my icon-my_faxian"></span>
+					<span class="tab-label">发现</span>
+				</a>
+				<a class="tab-item" href="rl-login.html">
+					<span class="icon icon-my icon-my_user"></span>
+					<span class="tab-label">我的</span>
+					<span class="badge">2</span>
+				</a>
+			</nav>
+			<!-- 内容区域  -->
+			<div class="content">
+				<!--内容区域导航-->
+				<div class="buttons-tab tab-bt">
+					<a href="#tab1" class="tab-link active button">问诊</a>
+					<a href="#tab2" class="tab-link button">比价</a>
+				</div>
+				<div class="tabs pull-to-refresh-container tab-con">
+					<div id="tab1" class="tab pull-to-refresh-content infinite-scroll active">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+				          <div class="preloader"></div>
+				          <div class="pull-to-refresh-arrow"></div>
+				        </div>
+						<ul class="m-inq_list" id="j-wz_list">
+							<!--<li>
+								<div class="m-question">
+									<a href="#">新买的极光，开着我的汽车电瓶一回就没电了，和引擎有问题有关系吗？之前就一直有过这个问题，仅仅是电瓶问题...</a>
+								</div>
+								<div class="m-answer">
+									<a class="newres" href="#">五条新回复</a>
+									<p><span>30分钟前</span><i>|</i><span>未解决</span></p>
+								</div>
+							</li>-->
+							<script id="t-wz-list" type="text/template7">
+								{{#each list}}
+								<li {{#if solved}} class="solved" {{/if}}>
+									<div class="m-question">
+										<a href="#">{{question}}</a>
+									</div>
+									<div class="m-answer">
+										<a href="#" {{#if has_newres}} class="newres"{{/if}}>{{#if has_newres}} {{newres}}{{else}}暂无回复{{/if}}</a>
+										<p><span>{{time}}</span><i>|</i>{{#if solved}}<span>已解决</span>{{else}}<span>未解决</span>{{/if}}</p>
+									</div>
+								</li>
+								{{/each}}
+							</script>
+						</ul>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="tab pull-to-refresh-content infinite-scroll">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+				          <div class="preloader"></div>
+				          <div class="pull-to-refresh-arrow"></div>
+				        </div>
+						<ul class="m-inq_list" id="j-bj_list">
+							<!--<li>
+								<div class="m-question">
+									<a href="#">我的卡罗拉跑了6万公里了，现在做第一次保养，有没有靠谱子的商家给我报个价，最好是在天河的，我周末有时间...</a>
+								</div>
+								<div class="m-answer">
+									<a class="newres" href="#">五条新回复</a>
+									<p><span>30分钟前</span><i>|</i><span>未解决</span></p>
+								</div>
+							</li>-->
+							<script id="t-bj-list" type="text/template7">
+								{{#each list}}
+								<li {{#if solved}} class="solved" {{/if}}>
+									<div class="m-question">
+										<a href="#">{{question}}</a>
+									</div>
+									<div class="m-answer">
+										<a href="#" {{#if has_newres}} class="newres"{{/if}}>{{#if has_newres}} {{newres}}{{else}}暂无回复{{/if}}</a>
+										<p><span>{{time}}</span><i>|</i>{{#if solved}}<span>已解决</span>{{else}}<span>未解决</span>{{/if}}</p>
+									</div>
+								</li>
+								{{/each}}
+							</script>
+						</ul>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

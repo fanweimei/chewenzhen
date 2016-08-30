@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>改装/加装</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" href="dist/css/light7-swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-jzIndex" class="page">
+			<!-- 头部 -->
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back" href="index.html"></a>
+				<h1 class="title">改装/加装</h1>
+			</header>
+			<!-- 工具栏 -->
+			<nav class="bar bar-tab">
+				<a class="tab-item active" href="index.html">
+					<span class="icon icon-my icon-my_index"></span>
+					<span class="tab-label">首页</span>
+				</a>
+				<a class="tab-item" href="#">
+					<span class="icon icon-my icon-my_wenzhen"></span>
+					<span class="tab-label">问诊</span>
+
+				</a>
+				<a class="tab-item " href="#">
+					<span class="icon icon-my icon-my_bijia"></span>
+					<span class="tab-label">比价</span>
+				</a>
+				<a class="tab-item " href="#">
+					<span class="icon icon-my icon-my_faxian"></span>
+					<span class="tab-label">发现</span>
+				</a>
+				<a class="tab-item" href="rl-login.html">
+					<span class="icon icon-my icon-my_user"></span>
+					<span class="tab-label">我的</span>
+					<span class="badge">2</span>
+				</a>
+			</nav>
+			<!-- 内容区域  -->
+			<div class="content">
+				<!--内容区域导航-->
+				<div class="buttons-tab tab-bt jz-buttons">
+					<a href="choose-city.html" class="button">选择城市 <span class="icon icon-xsanjiao"></span></a>
+					<a href="choose-car.html" class="button">选择车系 <span class="icon icon-xsanjiao"></span></a>
+				</div>
+				<div class="tabs pull-to-refresh-container tab-con">
+					<div id="tab1" class="tab pull-to-refresh-content infinite-scroll active list-block media-list m-list_qa f-nom">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+				          <div class="preloader"></div>
+				          <div class="pull-to-refresh-arrow"></div>
+				        </div>
+				         <!--按城市地点查询-->
+						<ul class="m-by_list no-border" id="j-bycity_list">
+							<!--<li>
+								<div class="item-content">
+									<span class="u-adopt"></span>
+									<div class="item-media"><img src="assets/temp/bussiness-list.png" style='width: 2.2rem;'></div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<h2 class="item-tt">广东中澳奥迪汽车4S店</h2>
+										</div>
+										<div class="item-subtt"><span>主修：奥迪 大众 本田</span><strong>东圃/车陂 7.0km</strong></div>
+										<div class="item-subcon">
+											<div class="text">
+												100%原厂配件+机油，正品低价 ，品质保障。10000家门店，预约到店即保。
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>-->
+							<script id="t-bycity-list" type="text/template7">
+								{{#each list}}
+								<li href={{url}}>
+									<div class="item-content">
+										<span class="u-adopt"></span>
+										<div class="item-media"><img src={{portrait}} style="width: 2.2rem;"></div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<h2 class="item-tt">{{name}}</h2>
+											</div>
+											<div class="item-subtt"><span>主修：{{majors}}</span><strong>{{pos}} {{dis}}</strong></div>
+											<div class="item-subcon">
+												<div class="text">
+													{{text}}
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								{{/each}}
+							</script>
+						</ul>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="tab pull-to-refresh-content infinite-scroll list-block media-list m-list_qa f-nom">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+				          <div class="preloader"></div>
+				          <div class="pull-to-refresh-arrow"></div>
+				        </div>
+				        <!--按车名查询-->
+						<ul class="m-by_list no-border" id="j-bycar_list">
+							<script id="t-bycar-list" type="text/template7">
+								{{#each list}}
+								<li href={{url}}>
+									<div class="item-content">
+										<span class="u-adopt"></span>
+										<div class="item-media"><img src={{portrait}} style="width: 2.2rem;" ></div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<h2 class="item-tt">{{name}}</h2>
+											</div>
+											<div class="item-subtt"><span>主修：{{majors}}</span><strong>{{pos}} {{dis}}</strong></div>
+											<div class="item-subcon">
+												<div class="text">
+													{{text}}
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								{{/each}}
+							</script>
+						</ul>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

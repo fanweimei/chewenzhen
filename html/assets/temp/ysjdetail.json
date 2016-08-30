@@ -1,0 +1,84 @@
+{
+    "status": "200",
+    "list": [
+        {
+        		"portrait": "assets/temp/bussiness-list.png",
+        		"hasadopted": "0",
+        		"adopted": "0",
+            "name": "广东中澳奥迪汽车4S店",
+            "majors": "奥迪 大众 本田",
+            "pos": "广州 东圃/车陂",
+            "dis": "7km",
+            "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。",
+            "item_table": [
+                {
+                    "item_name": "工时费",
+                    "working_hours": "嘉实多磁护",
+                    "material_costs": "￥800"
+                },
+                {
+                    "item_name": "机油",
+                    "working_hours": "米其林",
+                    "material_costs": "￥800"
+                },
+                {
+                    "item_name": "施救服务费",
+                    "working_hours": " ",
+                    "material_costs": "￥800"
+                },
+                {
+                    "item_name": "轮胎",
+                    "working_hours": " ",
+                    "material_costs": "￥800"
+                }
+            ],
+            "total": "￥1180",
+            "msg_box": [
+                {
+                    "type": "0",
+                    "text": "基本无关，可以打开电瓶的加水盖，看看水位是否在正常的位置。一般在电瓶侧边会有上、下限的标线供您参考。"
+                },
+                {
+                    "type": "1",
+                    "text": "那还有其他什么问题吗"
+                }
+            ],
+            "time": "2016-06-17"
+        },
+        {
+    		"portrait": "assets/temp/bussiness-list.png",
+    		"hasadopted": "0",
+    		"adopted": "0",
+        "name": "广东中澳奥迪汽车4S店",
+        "majors": "奥迪 大众 本田",
+        "pos": "广州 东圃/车陂",
+        "dis": "7km",
+        "text": "100%原厂配件+机油，正品低价 ，品质保障.10000家门店，预约到店即保。",
+        "item_table": [
+            {
+                "item_name": "工时费",
+                "working_hours": "美孚",
+                "material_costs": "￥800"
+            },
+            {
+                "item_name": "机油",
+                "working_hours": "米其林",
+                "material_costs": "￥800"
+            },
+            {
+                "item_name": "施救服务费",
+                "working_hours": "哈弗",
+                "material_costs": "￥800"
+            },
+            {
+                "item_name": "轮胎",
+                "working_hours": "华工",
+                "material_costs": "￥800"
+            }
+        ],
+        "total": "￥1180",
+        "time": "2016-06-17"
+    }
+    ],
+    "msg": "请求成功"
+}

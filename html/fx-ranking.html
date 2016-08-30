@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>排行榜</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" href="dist/css/light7-swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-fxRanking" class="page">
+			<!-- 头部 -->
+			<header class="bar bar-nav fxr-header">
+				<a class="icon icon-left pull-left back"></a>
+				<h1 class="title" id="j-rank_tt">专家排行榜</h1>
+			</header>
+			<!-- 工具栏 -->
+			<nav class="bar bar-tab">
+				<a class="tab-item" href="index.html">
+					<span class="icon icon-my icon-my_index"></span>
+					<span class="tab-label">首页</span>
+				</a>
+				<a class="tab-item" href="hd-index.html">
+					<span class="icon icon-my icon-my_wenzhen"></span>
+					<span class="tab-label">问诊</span>
+
+				</a>
+				<a class="tab-item " href="bj-index.html">
+					<span class="icon icon-my icon-my_bijia"></span>
+					<span class="tab-label">比价</span>
+				</a>
+				<a class="tab-item active" href="fx-index.html">
+					<span class="icon icon-my icon-my_faxian"></span>
+					<span class="tab-label">发现</span>
+				</a>
+				<a class="tab-item" href="pc-my.html">
+					<span class="icon icon-my icon-my_user"></span>
+					<span class="tab-label">我的</span>
+					<span class="badge">2</span>
+				</a>
+			</nav>
+			<!-- 内容区域  -->
+			<div class="content">
+				<!--内容区域导航-->
+				<div class="buttons-tab tab-bt" id="j-tab_bt">
+					<a href="#tab1" class="tab-link active button">维修专家</a>
+					<a href="#tab2" class="tab-link button">服务顾问</a>
+				</div>
+				<div class="tabs pull-to-refresh-container tab-con">
+					<div id="tab1" class="tab pull-to-refresh-content infinite-scroll active">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+							<div class="preloader"></div>
+							<div class="pull-to-refresh-arrow"></div>
+						</div>
+						<!--专家排行榜-->
+						<ul class="m-ranking_list" id="j-expert_list">
+							<!--<li>
+								<div class="item-top">
+									<div class="item-ranking">1</div>
+									<div class="item-info">
+										<dl>
+											<dt><img src="assets/temp/tfx-tx.png"/></dt>
+											<dd>
+												<div class="item-tt">
+													<span class="item-name">陈永胜</span>
+													<span class="item-type">维修专家</span>
+												</div>
+												<div class="item-exp">路虎维修经验5年</div>
+											</dd>
+										</dl>
+										<div class="item-praise">
+											<span class="icon icon-praise praise"></span>
+											<i class="praise_num">1454</i>
+										</div>
+									</div>
+								</div>
+								<div class="item-bottom">
+									<span>诊断问题<i>1840个</i></span>
+									<span>诊断采纳<i>80%</i></span>
+								</div>
+							</li>-->
+							<!-- 列表模板引擎的模板  -->
+							<script id="t-expert_list" type="text/template7">
+								{{#each list}}
+								<li>
+									<div class="item-top">
+										<div class="item-ranking {{#js_compare " this.rank_class !='others' "}}{{rank_class}}{{/js_compare}}">{{#js_compare " this.rank_class == 'others' "}}{{rank_id}}{{/js_compare}}</div>
+										<div class="item-info r-item_info">
+											<dl href={{url}}>
+												<dt><img src={{portrait}}/></dt>
+												<dd>
+													<div class="item-tt">
+														<span class="item-name">{{name}}</span>
+														<span class="item-type">{{type}}</span>
+													</div>
+													<div class="item-exp">{{exp}}</div>
+												</dd>
+											</dl>
+											<div class="item-praise">
+												<span class="icon icon-praise praise"></span>
+												<i class="praise_num">{{praise}}</i>
+											</div>
+										</div>
+									</div>
+									<div class="item-bottom">
+										<span>诊断问题<i>{{que_num}}</i></span>
+										<span>诊断采纳<i>{{adopt}}</i></span>
+									</div>
+								</li>
+								{{/each}}
+							</script>
+						</ul>
+
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="tab pull-to-refresh-content infinite-scroll">
+						<div class="pull-to-refresh-layer" style="opacity: 0;">
+							<div class="preloader"></div>
+							<div class="pull-to-refresh-arrow"></div>
+						</div>
+						<!--顾问排行榜-->
+						<ul class="m-ranking_list" id="j-adviser_list">
+							<!-- 列表模板引擎的模板  -->
+							<script id="t-adviser_list" type="text/template7">
+								{{#each list}}
+								<li>
+									<div class="item-top">
+										<div class="item-ranking {{#js_compare " this.rank_class !='others' "}}{{rank_class}}{{/js_compare}}">{{#js_compare " this.rank_class == 'others' "}}{{rank_id}}{{/js_compare}}</div>
+										<div class="item-info r-item_info">
+											<dl href={{url}}>
+												<dt><img src={{portrait}}/></dt>
+												<dd>
+													<div class="item-tt">
+														<span class="item-name">{{name}}</span>
+														<span class="item-type">{{type}}</span>
+													</div>
+													<div class="item-exp">{{exp}}</div>
+												</dd>
+											</dl>
+											<div class="item-praise">
+												<span class="icon icon-praise praise"></span>
+												<i class="praise_num">{{praise}}</i>
+											</div>
+										</div>
+									</div>
+									<div class="item-bottom">
+										<span>诊断问题<i>{{que_num}}</i></span>
+										<span>诊断采纳<i>{{adopt}}</i></span>
+									</div>
+								</li>
+								{{/each}}
+							</script>
+						</ul>
+						<div class="infinite-scroll-preloader">
+							<div class="preloader">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

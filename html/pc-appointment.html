@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>我的预约</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-appointment" class="page">
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back" href="pc-my.html"></a>
+				<h1 class="title">我的预约</h1>
+			</header>
+			<div class="content infinite-scroll">
+				<ul class="m-apo_list" id="j-scroll_list">
+				  	<!--<li>
+				  		<h3>
+				  			广东中澳奥迪4S专修店（东圃）
+				  			<div class="type s-by pull-right">
+								<span class="icon icon-bijia"></span>
+								保养比价
+							</div>
+				  		</h3>
+				  		<dl>
+				  			<dt><img src="assets/img/apo-01.png"/></dt>
+				  			<dd><a href="#"><span>预约时间：<i>2016-06-21  14：21</i></span><span>预约报价：<i>678.00</i></span></a></dd>
+				  		</dl>
+				  	</li>-->
+				</ul>
+				<script id="t-scroll_list" type="text/template7">
+					{{#each list}}
+					<li>
+				  		<h3>
+				  			{{shop_name}}
+				  			<div class="type pull-right {{type_class}} ">
+								<span class="icon icon-bijia"></span>
+								{{type}}
+							</div>
+				  		</h3>
+				  		<dl>
+				  			<dt><img src={{simg}} /></dt>
+				  			<dd><a href="#"><span>预约时间：<i>{{time}}i></span><span>预约报价：<i>{{price}}</i></span></a></dd>
+				  		</dl>
+				  	</li>
+				  	{{/each}}
+				</script>
+				<!-- preloader -->
+				<div class="infinite-scroll-preloader">
+					<div class="preloader"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+</html>

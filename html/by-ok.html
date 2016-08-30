@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>发布保养比价</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<!-- 保养周期表 -->
+		<div id="page-byok" class="page">
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back"></a>
+				<h1 class="title">提交成功</h1>
+			</header>
+			<div class="content">
+				<!--问题-->
+				<div class="m-list_box">
+					<div class="list-block media-list m-list_qa f-nom">
+						<ul class="list-container bj-list_con">
+							<li>
+								<div class="item-content">
+									<div class="item-media"><img src="assets/temp/hot-tx.png" style='width: 2.2rem;'></div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">
+												<span class="name">王小姐</span>
+												<span class="sex man"></span>
+												<span class="car">路虎极光</span>
+												<div class="type s-by">
+													<span class="icon icon-bijia"></span>
+													保养比价
+												</div>
+											</div>
+										</div>
+										<div class="item-address">广州 东圃/车陂</div>
+										<div class="item-subcon">
+											<div class="text">
+												我的奥迪 A6 两万公里保养，暂时还没确定去哪，其他部位无需维修，求专家帮我看一下？
+											</div>
+											<!--<ul class="img_box pb-standalone">
+												<li><img data-bigImg="//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg" src="assets/temp/267868.png" /> </li>
+												<li><img data-bigImg="//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg" src="assets/temp/267868.png" /> </li>
+											</ul>-->
+											<div class="bottom">
+												<span>20分钟前</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="m-near_buss">
+					附近商家
+				</div>
+				<!-- 附近商家列表 -->
+				<div class="m-buss_list">
+				    <ul id="j-scroll_list">
+				      <!--<li>
+				      	<div class="item-img"><img src="assets/temp/bussiness-list.png"></div>
+				        <div class="item-center f-br">
+				        		<h2 class="item-tt">广东中澳奥迪汽车4S店</h2>
+				            <p class="item-subtt"><span>主修：奥迪 大众 本田</span><strong>东圃/车陂 7.0km</strong></p>
+				        	 </div>
+				        <div class="item-right item-invite">
+				        		邀请回答
+				        </div>
+				      </li>-->
+				    </ul>
+				   <script id="t-scroll_list" type="text/template7">
+				    	{{#each list}}
+				    <li>
+				      	<div class="item-img"><img src={{portrait}}></div>
+				        <div class="item-center f-br">
+				        		<h2 class="item-tt">{{name}}</h2>
+				            <p class="item-subtt"><span>主修：{{majors}}</span><strong>{{des}} {{dis}}</strong></p>
+				        	 </div>
+				        <div class="item-right item-invite open-popup" data-popup=".pop-invite">
+				        		邀请比价
+				        </div>
+				      </li>
+				      </li>
+				    	{{/each}}
+				    </script>
+				    <!-- preloader -->
+					<div class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+					</div>
+				  </div>
+			</div>
+		</div>
+		<div class="pop popup pop-thank pop-invite">
+			<div class="m-pop">
+				<img src="assets/img/adopt-logo.png"/>
+				<h3>邀请成功！</h3>
+				<p>如有任何疑问可拨打客服热线<span>400-0040195</span></p>
+				<div class="m-close_bts close-popup">关闭</div>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

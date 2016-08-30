@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>热门比价</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" href="dist/css/light7-swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-bjLookup" class="page">
+			<!-- 头部 -->
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back" href="bj-index.html"></a>
+				<a class="icon icon-shaixuan pull-right open-panel" data-panel='#panel-left-demo'></a>
+				<h1 class="title">热门比价</h1>
+			</header>
+			<!-- 工具栏 -->
+			<nav class="bar bar-tab">
+				<a class="tab-item" href="index.html">
+					<span class="icon icon-my icon-my_index"></span>
+					<span class="tab-label">首页</span>
+				</a>
+				<a class="tab-item" href="hd-index.html">
+					<span class="icon icon-my icon-my_wenzhen"></span>
+					<span class="tab-label">问诊</span>
+
+				</a>
+				<a class="tab-item active" href="bj-index.html">
+					<span class="icon icon-my icon-my_bijia"></span>
+					<span class="tab-label">比价</span>
+				</a>
+				<a class="tab-item " href="fx-index.html">
+					<span class="icon icon-my icon-my_faxian"></span>
+					<span class="tab-label">发现</span>
+				</a>
+				<a class="tab-item" href="pc-my.html">
+					<span class="icon icon-my icon-my_user"></span>
+					<span class="tab-label">我的</span>
+					<span class="badge">2</span>
+				</a>
+			</nav>
+			<!-- 内容区域  -->
+			<div class="content infinite-scroll g-bj_con" data-distance="200">
+				<!-- 最新提问列表 -->
+				<div class="m-list_box">
+					<div class="list-block media-list m-list_qa f-nom">
+						<ul class="list-container bj-list_con" id="j-scroll_list">
+							<!--<li>
+								<div class="item-content">
+									<div class="item-media"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" style='width: 2.2rem;'></div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">
+												<span class="name">王先生</span>
+												<span class="sex man"></span>
+												<span class="car">路虎极光</span>
+												<div class="type s-by">
+													<span class="icon icon-bijia"></span>
+													保养比价
+												</div>
+											</div>
+										</div>
+										<div class="item-address">广州</div>
+										<div class="item-subcon">
+											<div class="text">
+												新买的极光，开着我的汽车电瓶一回就没电了，和引擎有问题有关系吗？请问我该怎么办？
+											</div>
+											<ul class="img_box pb-standalone">
+												<li><img data-bigImg="//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg" src="assets/temp/267868.png" /> </li>
+												<li><img data-bigImg="//img.alicdn.com/tps/i3/TB1kt4wHVXXXXb_XVXX0HY8HXXX-1024-1024.jpeg" src="assets/temp/267868.png" /> </li>
+											</ul>
+											<div class="msg_box">
+												<ul>
+													<li>
+														<span class="answer">回答：</span>基本无关，可以打开电瓶的加水盖，看看水位是否在正常的位置。一般在电瓶侧边会有上、下限的标线供您参考。
+													</li>
+													<li>
+														<span class="ask">追答：</span>会不会还有其他问题呢？
+													</li>
+												</ul>
+											</div>
+											<div class="bottom">
+												<span>20分钟前</span>
+												<span class="qibaobox"><i class="qibao"></i>5 </span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>-->
+						</ul>
+						<!-- 列表模板引擎的模板  -->
+						<script id="t-scroll_list" type="text/template7">
+							{{#each list}}
+							<li>
+								<div class="item-content">
+									<div class="item-media"><img src="{{portrait}}" style='width: 2.2rem;'></div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">
+												<span class="name">{{name}}</span>
+												<span class="sex {{#js_compare " this.sex==='0' "}}man{{else}}woman{{/js_compare}}"></span>
+												<span class="car">{{car}}</span>
+												<div class="type {{type_class}}">
+													<span class="icon icon-bijia"></span> {{type}}
+												</div>
+											</div>
+										</div>
+										<div class="item-address">{{address}}</div>
+										<div class="item-subcon">
+											<div class="text">
+												{{text}}
+											</div>
+											{{#if img_box}}
+											<!-- 图片点击可以放大预览，在img容器上添加pb-standalone类 js在main.js中  -->
+											<ul class="img_box pb-standalone">
+												{{#each this.img_box}}
+												<li><img data-bigImg="{{big_img}}" src="{{img}}" /> </li>
+												{{/each}}
+
+											</ul>
+											{{/if}} {{#if msg_box}}
+											<div class="msg_box">
+												<ul>
+													{{#each this.msg_box}}
+													<li>
+														<span class="{{#js_compare " this.type==='0' "}}answer{{else}}ask{{/js_compare}}">
+														{{#js_compare "this.type === '0'"}}追问:{{else}}追答：{{/js_compare}}
+															
+														</span>{{text}}
+													</li>
+													{{/each}}
+												</ul>
+											</div>
+											{{/if}}
+											<div class="bottom">
+												<span>{{time}}</span>
+												<span class="qibaobox"><i class="qibao"></i>{{num}} </span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							{{/each}}
+						</script>
+						<!-- preloader -->
+						<div class="infinite-scroll-preloader">
+							<div class="preloader"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-overlay"></div>
+		<div class="g-bj_conditon panel panel-right panel-cover" id='panel-left-demo'>
+			<div class="m-bj_condition">
+				<ul id="bjList">
+					<li><a href="#">全部比价</a><span class="icon icon-checked pull-right show"></span></li>
+					<li><a href="#">易碎件比价</a><span class="icon icon-checked pull-right"></span></li>
+					<li><a href="#">保养比价</a><span class="icon icon-checked pull-right"></span></li>
+					<li><a href="#">维修比价</a><span class="icon icon-checked pull-right"></span></li>
+				</ul>
+				<p><a href="#" id="j-btn" class="u-btn close-panel">确定</a></p>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

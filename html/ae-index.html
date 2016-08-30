@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>汽车快报</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no" name="format-detection" />
+		<meta content="email=no" name="format-detection" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="stylesheet" type="text/css" href="dist/css/light7.min.css" />
+		<link rel="stylesheet" href="dist/css/light7-swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/my_app.css" />
+	</head>
+
+	<body>
+		<div id="page-aeIndex" class="page">
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left back"></a>
+				<h1 class="title">汽车快报</h1>
+			</header>
+			<!-- 工具栏 -->
+			<nav class="bar bar-tab">
+				<a class="tab-item active" href="index.html">
+					<span class="icon icon-my icon-my_index"></span>
+					<span class="tab-label">首页</span>
+				</a>
+				<a class="tab-item" href="hd-index.html">
+					<span class="icon icon-my icon-my_wenzhen"></span>
+					<span class="tab-label">问诊</span>
+
+				</a>
+				<a class="tab-item " href="bj-index.html">
+					<span class="icon icon-my icon-my_bijia"></span>
+					<span class="tab-label">比价</span>
+				</a>
+				<a class="tab-item " href="fx-index.html">
+					<span class="icon icon-my icon-my_faxian"></span>
+					<span class="tab-label">发现</span>
+				</a>
+				<a class="tab-item" href="pc-my.html">
+					<span class="icon icon-my icon-my_user"></span>
+					<span class="tab-label">我的</span>
+					<span class="badge">2</span>
+				</a>
+			</nav>
+			<div class="content infinite-scroll">
+				<!-- 焦点图  -->
+				<div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img width="100%" src="assets/temp/ae-banner.png" alt=""></div>
+						<div class="swiper-slide"><img width="100%" src="assets/temp/ae-banner.png" alt=""></div>
+						<div class="swiper-slide"><img width="100%" src="assets/temp/ae-banner.png" alt=""></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<!--汽车列表-->
+				<div class="list-block media-list m-ae_list">
+					<ul id="j-scroll_list">
+						<!--<li>
+				        <a href="ae-detail.html">
+					        	<div class="item-content">
+					          <div class="item-media"><img src="assets/temp/ae-list-01.png"></div>
+					          <div class="item-inner">
+					            <div class="item-title-row">
+					              <div class="item-title">盘点顶级豪车排档位，劳斯莱斯和宾利居然最丑!</div>
+					            </div>
+					            <div class="item-subtitle">一起来看看顶级豪车的排档位都是怎么样的</div>
+					          </div>
+					        </div>
+				        </a>
+				      </li>-->
+					</ul>
+					<script id="t-scroll_list" type="text/template7">
+						{{#each list}}
+						<li>
+							<a href={{url}}>
+								<div class="item-content">
+									<div class="item-media"><img src={{simg}} /></div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">{{title}}</div>
+										</div>
+										<div class="item-subtitle">{{subtitle}}</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						{{/each}}
+					</script>
+					<!-- preloader -->
+					<div class="infinite-scroll-preloader">
+						<div class="preloader"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/tool.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/light7.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src='dist/js/light7-swiper.min.js' charset='utf-8'></script>
+	<script src="assets/js/my_app.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
