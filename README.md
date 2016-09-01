@@ -5,7 +5,7 @@
   <strong>原型链地址：</strong>https://modao.cc/app/WFT4yEmcZDRsFhvCpbBBrYpFxs6loC4
 </p>
 <p>
-  <strong>项目地址：</strong>
+  <strong>项目地址：</strong>https://www.fanweimei.com/zuopin/chewenzhen/html/index.html
 </p>
 <p>
   <strong>简介：</strong>车问诊是一个为广大汽车用户提供针对汽车故障问诊和维修报价的在线答疑和专家咨询的交流平台。 主要包括故障问诊、商家发现、维修比价三大模块;主要适用于微信场景。
