@@ -35,9 +35,6 @@
     （5）自身实现了js模板引擎的功能，不需要再引入template7.js模板引擎
 </p>
 <p>
-    原型链地址：https://modao.cc/app/WFT4yEmcZDRsFhvCpbBBrYpFxs6loC4
-</p>
-<p>
     项目中用light7js中的功能有：
 </p>
 <p>
