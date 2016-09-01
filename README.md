@@ -2,16 +2,10 @@
     车问诊项目小结
 </p>
 <p>
-</p>
-<p>
     原型链地址：https://modao.cc/app/WFT4yEmcZDRsFhvCpbBBrYpFxs6loC4
 </p>
 <p>
-</p>
-<p>
     项目地址：
-</p>
-<p>
 </p>
 <p>
     简介：车问诊是一个为广大汽车用户提供针对汽车故障问诊和维修报价的在线答疑和专家咨询的交流平台。 主要包括故障问诊、商家发现、维修比价三大模块;主要适用于微信场景。
@@ -47,7 +41,7 @@
     项目中用light7js中的功能有：
 </p>
 <p>
-    1.路由
+    1、路由
 </p>
 <p>
     实现的功能：从一个页面跳转到另一个页面，这里的页面可以是普通页面、也可以内联页面、还可以是ajax加载的新页面（内联页面：物理上来说是一个页面，对应了多个div模块，每个模块代表了一个虚拟的页面），每个页面对应一个.page容器。这样做的一个好处是如果a和b页面都可以通过链接点击到c页面，c页面有个返回按钮，不需要添加链接href地址，就可以返回到源页面（也可以添加链接url）。实现原理是Router（路由）中有个属性stack中保存了back（返回栈）关键词，每次页面跳转都记录页面的pageId，返回时，根据返回栈上一个pageId返回。Router类stack中保存了两个关键栈back和forward。当点击一个有back类的按钮时，保存当前页面的对象（包括路径，pageId，动画效果）并入栈至forward，判断back类对应的元素中是否有href属性，有则按照href地址返回，没有则弹出back栈的最后一个元素；当点击一个普通链接时，保存当前页面对象（包括路径，pageId，动画效果）并入栈至back栈中，并将链接对应的页面添加到body中，第一个page容器前（实现缓存，避免重用ajax请求上次请求过的页面），所以这里也要取出forward栈中的元素，如果存在，直接添加page-current类就可以了，不必再次使用ajax加载。（也是先取出forward栈，如果栈中有元素就调用history.forward，如果没有数据，就改变location.href的值）。如果是重载页面或者内联页面就使用replaceState方法，而不是pushState。
@@ -74,7 +68,7 @@
     （小技巧：随机生成唯一的id号，使用new Date()方法）
 </p>
 <p>
-    2.适配
+   2、适配
 </p>
 <p>
     light7.css本身就实现了适配，所以项目中不需要考虑适配的问题，所有度量单位都使用rem
@@ -104,7 +98,7 @@
     light7是只适用于移动端的库文件，light7.css基本都是使用了less和sass语言，以后项目中可以考虑使用less和sass
 </p>
 <p>
-    3.modal
+    3、modal
 </p>
 <p>
     包括指示器、toast、pop弹出框、Picker、日历
@@ -125,7 +119,7 @@
     以toast为例，toast主要用来提示，比如操作成功提示、操作失败提示，在调用$.openModal方法只会，显示提示内容后的30s（定时器），调用$.closeModal关闭提示框。
 </p>
 <p>
-    4.列表
+    4、列表
 </p>
 <p>
     （1）模块引擎：在light7.js文件中包含了template7.js的内，有个Template7的类用于解析模板，形成列表。
@@ -170,7 +164,7 @@
     （注意：初始化数据后，如果列表的内容高度小于父级&quot;&quot;infinite-scroll&quot;的高度，不满足((scrollTop + height + distance) &gt;= scrollHeight)就不会有滚动效果。
 </p>
 <p>
-    5.图片浏览（点击小图片，会弹出大图片列表）
+    5、图片浏览（点击小图片，会弹出大图片列表）
 </p>
 <p>
     用法：给图片列表的父级添加&quot;pb-standalone&quot;类
@@ -212,7 +206,7 @@
     &nbsp; });
 </p>
 <p>
-    以上代码首先是调用$.photoBrowser()方法，并传入传入参数photos(要浏览的图片列表)，返回PhotoBrowser类的实例，在调用open()方法。
+    以上代码首先是调用$.photoBrowser()方法，并传入传入参数photos(要浏览的图片列表)，返回PhotoBrowser类的实例，再调用open()方法。
 </p>
 <p>
     新建PhotoBrowser类，构造函数完成的任务有：首先是新建弹出框模板，然后通过正则，将参数params.photos(PhotoBrowser类中有个默认参数列表defaults,将defaults和传入参数合并，得到params)填充到模板上。最后得到图片浏览的弹出框。
@@ -227,7 +221,7 @@
     都是在open方法中注册了这些事件。
 </p>
 <p>
-    6.图片上传，
+    6、图片上传，
 </p>
 <p>
     引入了外部文件lrz.all.bundle.js，实现方法：
@@ -245,11 +239,9 @@
     （4）成功保存后，新建一个li元素，将图片插入li元素下，并将li元素插入到父级容器中。
 </p>
 <p>
-    7.聊天界面
+   7、聊天界面
 </p>
 <p>
     有点复杂，待续
 </p>
-<p>
-    <br/>
-</p>
+
