@@ -1956,9 +1956,8 @@ Device/OS Detection
         _modalTemplateTempDiv.innerHTML = modalHTML;
 
         var modal = $(_modalTemplateTempDiv).children();
-
         $(defaults.modalContainer).append(modal[0]);
-        
+		        
         // Add events on buttons
         modal.find('.modal-button').each(function (index, el) {
             $(el).on('click', function (e) {

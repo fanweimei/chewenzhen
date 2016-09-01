@@ -521,7 +521,6 @@ function imgOpera() {
 		color: 'danger',
 		onClick: function() {
 			var list = [];
-			console.log(_this)
 			_this.parents("#j-lc_ListImg").find("li img").each(function() {
 				list.push($(this).attr("src"));
 			});

@@ -3820,7 +3820,7 @@ Framework7 Swiper Additions
         }
 
         pb.params = params;
-
+		
         var navbarTemplate = pb.params.navbarTemplate ||
                             '<header class="bar bar-nav">' + 
                               '<a class="icon icon-left pull-left photo-browser-close-link' + (pb.params.type === 'popup' ?  " close-popup" : "") + '"></a>' + 
@@ -3850,7 +3850,6 @@ Framework7 Swiper Additions
                                 '</div>' +
                             '</div>' +
                         '</div>';
-
         var photoTemplate = !pb.params.lazyLoading ? 
             (pb.params.photoTemplate || '<div class="photo-browser-slide swiper-slide"><span class="photo-browser-zoom-container"><img src="{{url}}"></span></div>') : 
             (pb.params.photoLazyTemplate || '<div class="photo-browser-slide photo-browser-slide-lazy swiper-slide"><div class="preloader' + (pb.params.theme === 'dark' ? ' preloader-white' : '') + '"></div><span class="photo-browser-zoom-container"><img data-src="{{url}}" class="swiper-lazy"></span></div>');
@@ -3994,7 +3993,6 @@ Framework7 Swiper Additions
             pb.container.find('.photo-browser-total').text(total);
 
             $('.photo-browser-prev, .photo-browser-next').removeClass('photo-browser-link-inactive');
-            
             if (swiper.isBeginning && !pb.params.loop) {
                 $('.photo-browser-prev').addClass('photo-browser-link-inactive');
             }
@@ -4198,7 +4196,6 @@ Framework7 Swiper Additions
             if (!gestureImg || gestureImg.length === 0) return;
             pb.swiper.allowClick = false;
             if (!imageIsTouched || !gestureSlide) return;
-
             if (!imageIsMoved) {
                 imageWidth = gestureImg[0].offsetWidth;
                 imageHeight = gestureImg[0].offsetHeight;
